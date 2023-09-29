@@ -2,6 +2,10 @@
 
 Este proyecto es una aplicación de búsqueda de socios para el Sport Club.
 
+## Demo en Vivo
+
+Puedes acceder a una demo en vivo de la aplicación [aquí](https://sport-c-partner-finder-app.vercel.app/)
+
 ## Instalación
 
 Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
