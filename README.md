@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Sport Club Partner Finder
 
-## Getting Started
+Este proyecto es una aplicación de búsqueda de socios para el Sport Club.
 
-First, run the development server:
+## Instalación
+
+Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
+
+1. Clona este repositorio en tu máquina local.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    git clone https://github.com/tu-usuario/sport-club-partner-finder.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navega al directorio del proyecto.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+    cd sport-club-partner-finder
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Instala las dependencias del proyecto.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+    npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Configura las variables de entorno.
+   .Renombra el archivo .env-template a .env.
+   .Abre el archivo .env y proporciona los valores adecuados para las variables de entorno, especialmente MONGODB_URI que debería ser la conexión a tu base de datos MongoDB.
+5. Inicia el servidor de desarrollo.
 
-## Learn More
+```bash
+    npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. Abre tu navegador e ingresa la siguiente URL:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+    http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+¡El proyecto ahora debería estar funcionando en tu entorno local!
 
-## Deploy on Vercel
+## Scripts disponibles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npm run dev: Inicia el servidor de desarrollo en http://localhost:3000.
+npm run build: Crea una versión optimizada del proyecto para producción.
+npm start: Inicia el servidor en producción.
+npm run lint: Ejecuta el linter para verificar problemas de formato y estilo de código.
+
+## Tecnologías utilizadas
+
+Next.js - Framework de React para construir aplicaciones web.
+Material-UI - Biblioteca de componentes de interfaz de usuario para React.
+MongoDB - Base de datos NoSQL.
+Framer Motion - Biblioteca de animaciones para React.
+
+## Contribución
+
+Si deseas contribuir a este proyecto, siéntete libre de hacerlo. Puedes abrir un problema para reportar errores o enviar una solicitud de extracción con tus mejoras.

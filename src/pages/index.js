@@ -104,7 +104,7 @@ export default function Home() {
 
   const handleOpenEditUserModal = async (id) => {
     try {
-      const res = await axios.get(`http://localhost:3000/api/users/getUserById?id=${id}`)
+      const res = await axios.get(`/api/users/getUserById?id=${id}`)
       let result = res.data;
       setEditUserData(result);
       setIsEditUserModalOpen(true);
@@ -138,7 +138,7 @@ export default function Home() {
     let {_id} = val
     setIsLoading(true);
     try {
-      const res = await axios.put(`http://localhost:3000/api/users/updateUser?id=${_id}`, val)
+      const res = await axios.put(`/api/users/updateUser?id=${_id}`, val)
       let result = res.data;
       setEditUserData(result);
     } catch (error) {
