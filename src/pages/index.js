@@ -170,13 +170,6 @@ export default function Home() {
       </Head>
       <AppBar position="relative" color="secondary">
           <Toolbar>
-            <Image
-              src="/logo-sport-club.png"
-              alt="sport club logo"
-              width={150}
-              height={60}
-              priority
-            />
             <Typography variant="h6" color="inherit" noWrap>
               Partner Finder App
             </Typography>

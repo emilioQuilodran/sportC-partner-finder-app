@@ -2,14 +2,19 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Image from 'next/image';
 
 
 export const Footer = () => {
   return (
-    <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-        SportClub
-        </Typography>
+    <Box sx={{ bgcolor: 'background.paper', p: 6, textAlign: "center" }} component="footer">
+            <Image
+              src="/logo-sport-club.png"
+              alt="sport club logo"
+              width={150}
+              height={60}
+              priority
+            />
         <Typography
           variant="subtitle1"
           align="center"
